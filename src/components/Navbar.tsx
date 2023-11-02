@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     // <nav className='border-b border-slate-700 p-1'>
-    <nav className="border-b border-slate-700/30 p-3 fixed w-full">
+    <nav className="border-b border-slate-700 bg-slate-900/40 backdrop-blur-xl p-3 fixed w-full">
       <button onClick={linksDisplayHandler} className="sm:hidden relative left-[88%]">
         {areLinksDisplayed ? "hide" : "show"}
       </button>

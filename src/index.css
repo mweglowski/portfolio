@@ -9,7 +9,17 @@ body {
 	@apply bg-slate-900 text-slate-200;
 }
 
+/* GENERAL */
+.section-title {
+	@apply text-2xl text-center;
+}
+
 /* NAVIGATION */
 .nav-link {
 	@apply py-3 px-5 mx-5 rounded-md hover:bg-slate-800 duration-300 cursor-pointer hover:text-slate-400;
+}
+
+/* PROJECTS */
+.tech {
+	@apply border py-1 px-3 rounded border-slate-700 text-slate-400;
 }
