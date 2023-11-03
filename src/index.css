@@ -11,7 +11,10 @@ body {
 
 /* GENERAL */
 .section-title {
-	@apply text-2xl text-center;
+	@apply text-2xl text-center uppercase;
+}
+.input {
+	@apply bg-transparent border-2 border-slate-800 rounded-md w-full p-2 text-lg outline-none focus:border-slate-700 duration-300 placeholder:text-slate-500;
 }
 
 /* NAVIGATION */
