@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ExpandDownIcon from '../assets/images/expand-down.svg'
 
 const Navbar = () => {
-  const [areLinksDisplayed, setLinksDisplay] = useState<boolean>(true);
+  const [areLinksDisplayed, setLinksDisplay] = useState<boolean>(false);
 
   const linksDisplayHandler = () => {
     setLinksDisplay((prevLinksDisplay: boolean) => !prevLinksDisplay);

@@ -23,10 +23,13 @@ body {
 	read-only:bg-blue-500;
 }
 .button-hover {
-	@apply hover:bg-slate-800 hover:text-slate-500 duration-300;
+	@apply hover:bg-slate-800 hover:text-slate-500 duration-300 cursor-pointer;
 }
 .button {
 	@apply w-fit text-slate-400 button-hover;
+}
+.socials-icon {
+	@apply w-[40px] h-[40px] rounded-md p-[6px] button-hover;
 }
 
 /* NAVIGATION */
