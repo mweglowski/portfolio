@@ -10,13 +10,13 @@ const Navbar = () => {
 
   return (
     // <nav className='border-b border-slate-700 p-1'>
-    <nav className="border-b border-slate-700 bg-slate-900/40 backdrop-blur-xl p-3 fixed w-full">
+    <nav className="border-b-2 border-slate-800 bg-slate-900/40 backdrop-blur-xl p-3 fixed w-full">
       <button onClick={linksDisplayHandler} className="sm:hidden flex ml-auto">
         <img src={ExpandDownIcon} className={`w-[35px] h-[35px] duration-300 button-hover card ${areLinksDisplayed ? 'rotate-180' : null}`} />
       </button>
 
       {/* apply ternary operator inside classname on larger devices */}
-      {(areLinksDisplayed) ? <ul className="flex flex-col text-center gap-3 sm:flex-row sm:justify-center">
+      {(areLinksDisplayed) ? <ul className="flex flex-col text-center gap-3 sm:flex-row sm:justify-center mt-3">
         <li className="nav-link">Home</li>
         <li className="nav-link">About</li>
         <li className="nav-link">Projects</li>

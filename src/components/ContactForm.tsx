@@ -2,8 +2,7 @@ import { useRef, type FormEvent } from 'react';
 import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
-  const emailInputRef = useRef<HTMLInputElement>(null);
-  const messageTextareaRef = useRef<HTMLTextAreaElement>(null);
+  const formRef = useRef<HTMLFormElement>(null);
 
   const sendEmail = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -26,10 +25,12 @@ const ContactForm = () => {
       .catch((error) => {
         console.log(error.text);
       });
+
+    formRef.current!.reset()
   }
 
   return (
-    <form onSubmit={sendEmail} className="flex flex-col p-4 mt-10">
+    <form onSubmit={sendEmail} className="flex flex-col p-4 mt-10" ref={formRef}>
       <h2 className="text-center text-lg text-slate-400 mb-2">EMAIL</h2>
       <div className="flex flex-col gap-4">
         <input
