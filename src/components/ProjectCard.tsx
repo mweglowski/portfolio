@@ -6,13 +6,17 @@ type ProjectCardProps = {
 };
 
 const ProjectCard = ({ projectData }: ProjectCardProps) => {
-	const {title, stack, imgSrc, githubLink} = projectData;
+	const {title, description, stack, imgSrc, githubLink} = projectData;
 
   return (
     <div className="border-2 border-slate-800 rounded-md">
       {/* CARD HEADER */}
       <div className="text-center text-xl p-2 border-b-2 border-slate-800">
         {title}
+      </div>
+
+      <div className="p-2 text-center border-b-2 border-slate-800">
+        <p className="text-slate-400">{description}</p>
       </div>
 
       {/* TECH STACK */}
