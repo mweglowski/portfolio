@@ -9,7 +9,7 @@ const ProjectCard = ({ projectData }: ProjectCardProps) => {
 	const {title, description, stack, imgSrc, githubLink} = projectData;
 
   return (
-    <div className="border-2 border-slate-800 rounded-md">
+    <div className="card">
       {/* CARD HEADER */}
       <div className="text-center text-xl p-2 border-b-2 border-slate-800">
         {title}
@@ -29,7 +29,7 @@ const ProjectCard = ({ projectData }: ProjectCardProps) => {
 
       {/* ACTIONS */}
       <div className="flex justify-between mt-3 items-end">
-        <button className="text-slate-400 border-t-2 border-r-2 border-slate-800 p-2 rounded-tr-md hover:bg-slate-800 duration-300">
+        <button className="text-slate-400 border-t-2 border-r-2 border-slate-800 p-2 rounded-tr-md button-hover">
           Preview
         </button>
         <a className="text-amber-400 hover:underline cursor-pointer p-1 pr-2 hover:text-amber-500 duration-300" href={githubLink} target="_blank">

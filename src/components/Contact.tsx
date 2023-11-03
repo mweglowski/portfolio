@@ -10,7 +10,11 @@ const Contact = () => {
         </p>
       </header>
 
+      {/* EMAIL */}
 			<ContactForm />
+
+      {/* SOCIAL MEDIA LINKS */}
+      <h2 className="text-center text-lg text-slate-400 mt-14">SOCIAL MEDIA</h2>
     </section>
   );
 };

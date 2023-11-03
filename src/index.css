@@ -10,11 +10,23 @@ body {
 }
 
 /* GENERAL */
+.card {
+	@apply border-2
+	bg-slate-900 border-slate-800 rounded-md;
+}
 .section-title {
 	@apply text-2xl text-center uppercase;
 }
 .input {
-	@apply bg-transparent border-2 border-slate-800 rounded-md w-full p-2 text-lg outline-none focus:border-slate-700 duration-300 placeholder:text-slate-500;
+	@apply card w-full p-2 text-lg outline-none focus:border-slate-700 duration-300 placeholder:text-slate-500
+	autofill:text-red-500
+	read-only:bg-blue-500;
+}
+.button-hover {
+	@apply hover:bg-slate-800 hover:text-slate-500 duration-300;
+}
+.button {
+	@apply w-fit text-slate-400 button-hover;
 }
 
 /* NAVIGATION */
