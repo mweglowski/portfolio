@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ExpandDownIcon from '../assets/images/expand-down.svg'
 
 const Navbar = () => {
   const [areLinksDisplayed, setLinksDisplay] = useState<boolean>(true);
@@ -10,10 +11,11 @@ const Navbar = () => {
   return (
     // <nav className='border-b border-slate-700 p-1'>
     <nav className="border-b border-slate-700 bg-slate-900/40 backdrop-blur-xl p-3 fixed w-full">
-      <button onClick={linksDisplayHandler} className="sm:hidden relative left-[88%]">
-        {areLinksDisplayed ? "hide" : "show"}
+      <button onClick={linksDisplayHandler} className="sm:hidden flex ml-auto">
+        <img src={ExpandDownIcon} className={`w-[35px] h-[35px] duration-300 button-hover card ${areLinksDisplayed ? 'rotate-180' : null}`} />
       </button>
-      {/* <ul className='flex justify-center gap-2'> */}
+
+      {/* apply ternary operator inside classname on larger devices */}
       {(areLinksDisplayed) ? <ul className="flex flex-col text-center gap-3 sm:flex-row sm:justify-center">
         <li className="nav-link">Home</li>
         <li className="nav-link">About</li>
