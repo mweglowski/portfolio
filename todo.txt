@@ -2,7 +2,6 @@ website preview in projects section
 
 education section
 about section
-contact section
 
 scroll automatically to specific section after clicking navigation link
 
