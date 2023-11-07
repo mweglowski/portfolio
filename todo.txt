@@ -1,6 +1,5 @@
 website preview in projects section
 
-education section
 about section
 
 scroll automatically to specific section after clicking navigation link

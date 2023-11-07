@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     // <nav className='border-b border-slate-700 p-1'>
-    <nav className="border-b-2 border-slate-800 bg-slate-900/40 backdrop-blur-xl p-3 fixed w-full z-50">
+    <nav className="border-b-2 border-slate-800 bg-slate-900/40 backdrop-blur-xl p-3 fixed w-full z-40">
       <button onClick={linksDisplayHandler} className="sm:hidden flex ml-auto">
         <img src={ExpandDownIcon} className={`w-[35px] h-[35px] duration-300 button-hover card ${areLinksDisplayed ? 'rotate-180' : null}`} />
       </button>
