@@ -1,4 +1,15 @@
-const Home = () => {
+import { useState } from "react";
+import { useModalContext } from "../store/modal-context";
+
+type HomeProps = {
+  onGameDisplayChange: () => void;
+}
+
+const Home = ({ onGameDisplayChange }: HomeProps) => {
+  const gameDisplayHandler = () => {
+    onGameDisplayChange();
+  }
+
   return (
     <section className="h-[100vh] flex flex-col">
       <header className="pt-[35vh]">
@@ -11,7 +22,7 @@ const Home = () => {
 
       <div className="flex items-center gap-4 mx-auto mt-[85%]">
         <p className="text-slate-400">Feeling bored?</p>
-        <button className="button-hover card text-slate-400 py-1 px-2">Play a game!</button>
+        <button className="button-hover card text-slate-400 py-1 px-2" onClick={gameDisplayHandler}>Play a game!</button>
       </div>
     </section>
   );
