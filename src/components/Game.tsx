@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Backdrop from './UI/Backdrop';
+import { useTimerContext } from '../store/timer-context';
 
 type GameProps = {
   onDisplayChange: () => void;
@@ -11,6 +12,8 @@ type CordsState = {
 }
 
 const Game = ({ onDisplayChange }: GameProps) => {
+  const { startTime, setStartTime } = useTimerContext();
+
   const rows = 5
   const columns = 5
 
@@ -18,6 +21,7 @@ const Game = ({ onDisplayChange }: GameProps) => {
   const [isRunning, setIsRunning] = useState<boolean>(false);
   const [correctHit, setIsCorrectHit] = useState<boolean>(false);
   const [isWinNotificationDisplayed, setWinNotificationDisplay] = useState<boolean>(false);
+  const [delay, setDelay] = useState<number>()
 
   let board = []
   for (let i = 0; i < rows; i++) {
@@ -31,6 +35,7 @@ const Game = ({ onDisplayChange }: GameProps) => {
 
   const startGame = () => {
     setIsRunning(true);
+    setStartTime(new Date());
 
     const row_index = Math.round(Math.random() * (rows - 1))
 
@@ -50,6 +55,11 @@ const Game = ({ onDisplayChange }: GameProps) => {
   const checkAim = (row_index: number, col_index: number) => {
     // STOP GAME, CHECK RESULT
     setIsRunning(false);
+
+    const currentTime = new Date()
+    const delay = (currentTime.getSeconds() * 1000 + currentTime.getMilliseconds()) - (startTime.getSeconds() * 1000 + startTime.getMilliseconds())
+    setDelay(delay)
+
     // NOTIFICATE IF USER WON
     setWinNotificationDisplay(true);
 
@@ -68,7 +78,10 @@ const Game = ({ onDisplayChange }: GameProps) => {
         <h2 className='mt-[10%] text-center text-2xl'>AIM & REACTION TEST</h2>
 
         {/* WIN / LOSE NOTIFICATION */}
-        <div className={`mx-auto text-xl ${!isWinNotificationDisplayed && 'opacity-0'}`}>{correctHit ? <p className='text-cyan-500'>Excellent aim!</p> : <p className=' text-rose-500 text-shadow-md'>Wrong cell!</p>}</div>
+        <div className={`mx-auto text-xl ${!isWinNotificationDisplayed && 'opacity-0'}`}>
+          {correctHit ? <p className='text-cyan-500'>Excellent aim!</p> : <p className=' text-rose-500 text-shadow-md'>Wrong cell!</p>}
+          <p className={`${correctHit ? 'text-center text-2xl text-slate-400' : 'opacity-0'}`}>{delay}ms</p>
+        </div>
 
         {/* BOARD */}
         <div className='mx-auto'>
