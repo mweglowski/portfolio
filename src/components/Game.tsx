@@ -35,7 +35,9 @@ const Game = ({ onDisplayChange }: GameProps) => {
 
   const startGame = () => {
     setIsRunning(true);
-    setStartTime(new Date());
+    const startGameTime = new Date();
+    console.log(startGameTime)
+    setStartTime(startGameTime);
 
     const row_index = Math.round(Math.random() * (rows - 1))
 
@@ -57,8 +59,20 @@ const Game = ({ onDisplayChange }: GameProps) => {
     setIsRunning(false);
 
     const currentTime = new Date()
-    const delay = (currentTime.getSeconds() * 1000 + currentTime.getMilliseconds()) - (startTime.getSeconds() * 1000 + startTime.getMilliseconds())
+    console.log(currentTime)
+    const currentTimeMilliseconds = (currentTime.getHours() * 3600000) +
+      (currentTime.getMinutes() * 60000) +
+      (currentTime.getSeconds() * 1000) +
+      currentTime.getMilliseconds();
+
+    const startTimeMilliseconds = (startTime.getHours() * 3600000) +
+      (startTime.getMinutes() * 60000) +
+      (startTime.getSeconds() * 1000) +
+      startTime.getMilliseconds();
+
+    const delay = currentTimeMilliseconds - startTimeMilliseconds;
     setDelay(delay)
+    console.log(delay)
 
     // NOTIFICATE IF USER WON
     setWinNotificationDisplay(true);

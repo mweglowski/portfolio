@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Education from "./components/Education";
+import About from "./components/About";
 import Game from "./components/Game";
 import ModalContextProvider from "./store/modal-context";
 import TimerContextProvider from './store/timer-context';
@@ -25,7 +26,7 @@ function App() {
 
         <Navbar />
         <Home onGameDisplayChange={gameDisplayHandler} />
-        {/* ABOUT */}
+        <About />
         <Education />
         <Projects />
         <Contact />
