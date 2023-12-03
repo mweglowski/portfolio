@@ -9,7 +9,7 @@ const ProjectCard = ({ projectData }: ProjectCardProps) => {
 	const {title, description, stack, imgSrc, githubLink} = projectData;
 
   return (
-    <div className="card">
+    <div className="card min-w-[350px] w-[45%] max-w-[400px] flex flex-col h-fit">
       {/* CARD HEADER */}
       <div className="text-center text-xl p-2 border-b-2 border-slate-800">
         {title}

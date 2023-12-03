@@ -8,7 +8,7 @@ type ProjectCardListProps = {
 
 const ProjectCardList = ({ projectsData }: ProjectCardListProps) => {
   return (
-    <div className="flex flex-col p-6 gap-10 mt-8">
+    <div className="flex p-4 gap-10 mt-8 flex-wrap justify-center">
       {projectsData.map((projectData) => (
         <ProjectCard projectData={projectData} key={Math.random()}/>
       ))}
