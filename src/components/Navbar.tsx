@@ -24,12 +24,12 @@ const Navbar = () => {
       </ul> : null}
 
       {/* LARGER DEVICES */}
-      {(areLinksDisplayed) ? <ul className="hidden sm:flex sm:justify-center">
+      <ul className="hidden sm:flex sm:justify-center">
         <li className="nav-link">Home</li>
         <li className="nav-link">About</li>
         <li className="nav-link">Projects</li>
         <li className="nav-link">Contact</li>
-      </ul> : null}
+      </ul>
     </nav>
   );
 };
