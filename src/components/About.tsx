@@ -8,13 +8,13 @@ const About = () => {
         <p className="text-slate-400">Know me better</p>
       </header>
 
-      <div className="flex flex-col items-center md:flex-row w-full p-8 max-w-[800px]">
+      <div className="flex flex-col items-center md:flex-row w-full p-4 max-w-[800px]">
 
         {/* Photo */}
         <div className="overflow-hidden w-[75%] mx-auto relative rounded-[44%] max-w-[430px] sm:mx-2">
-          <div className="absolute z-20 w-[105%] h-[105%] rounded-full box-inset-shadow border-4 border-amber-400 -left-[10px] -top-[10px]"/>
+          <div className="absolute z-20 w-[105%] h-[105%] rounded-full box-inset-shadow border-none border-amber-400 -left-[10px] -top-[10px]"/>
 
-          <img src={MyPhoto}/>
+          <img src={MyPhoto} className="rounded-full"/>
         </div>
 
         <div className="card w-[80%] p-4 -mt-4 md:relative md:-left-4 md:m-0 -z-10">
