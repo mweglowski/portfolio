@@ -11,7 +11,7 @@ const Home = ({ onGameDisplayChange }: HomeProps) => {
   }
 
   return (
-    <section className="h-[100vh] flex flex-col">
+    <section className="h-[100vh] flex flex-col relative">
       <header className="pt-[35vh]">
         <div className="text-4xl text-slate-300 text-center">
           <p>Hi!</p>
@@ -20,7 +20,7 @@ const Home = ({ onGameDisplayChange }: HomeProps) => {
         </div>
       </header>
 
-      <div className="flex items-center gap-4 mx-auto mt-[85%]">
+      <div className="flex items-center gap-4 mx-auto top-[40vh] relative">
         <p className="text-slate-400">Feeling bored?</p>
         <button className="button-hover card text-slate-400 py-1 px-2" onClick={gameDisplayHandler}>Play a game!</button>
       </div>
