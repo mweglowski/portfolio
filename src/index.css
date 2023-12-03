@@ -44,7 +44,7 @@ body {
 
 /* EDUCATION */
 .edu-time-container {
-	@apply relative z-10 h-[200px] flex before:w-[19px] before:h-[19px] before:bg-amber-500 before:absolute before:rounded-full before:left-[15px] before:z-30 before:shadow-lg before:shadow-orange-400 after:absolute after:h-full after:bg-slate-800 after:w-[5px] after:rounded-full after:top-0 after:left-[22px] after:z-20;
+	@apply relative z-10 h-[200px] flex before:w-[19px] before:h-[19px] before:bg-amber-500 before:absolute before:rounded-full before:left-[15px] before:z-30 before:shadow-lg before:shadow-orange-400 after:absolute after:h-full after:bg-slate-800 after:w-[5px] after:rounded-full after:top-0 after:left-[22px] after:z-20 w-fit;
 }
 .edu-card {
 	@apply card mr-5 ml-10 p-4 flex flex-col gap-3 h-fit my-auto button-hover;
