@@ -56,7 +56,7 @@ const Projects = () => {
       description: "🚌 Application that shows the nearest arrival times of buses and trams from nearby stops.",
       stack: [
         "JavaScript",
-        "React",
+        "React.js",
         "Tailwind",
         "HTML",
         "CSS"
@@ -66,10 +66,10 @@ const Projects = () => {
     },
     {
       title: "This Portfolio",
-      description: "🗃 My Personal Portfolio",
+      description: "🗃️ My Personal Portfolio",
       stack: [
         "TypeScript",
-        "React",
+        "React.js",
         "Tailwind",
         "HTML",
         "CSS"
