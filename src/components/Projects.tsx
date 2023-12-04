@@ -52,6 +52,32 @@ const Projects = () => {
       githubLink: "https://github.com/mweglowski/property_price_predictor",
     },
     {
+      title: "Departures",
+      description: "🚌 Application that shows the nearest arrival times of buses and trams from nearby stops.",
+      stack: [
+        "JavaScript",
+        "React",
+        "Tailwind",
+        "HTML",
+        "CSS"
+      ],
+      imgSrc: "../assets/images/departures.jpg",
+      githubLink: "https://github.com/mweglowski/departures",
+    },
+    {
+      title: "This Portfolio",
+      description: "🗃 My Personal Portfolio",
+      stack: [
+        "TypeScript",
+        "React",
+        "Tailwind",
+        "HTML",
+        "CSS"
+      ],
+      imgSrc: "../assets/images/portfolio.jpg",
+      githubLink: "https://github.com/mweglowski/portfolio-typescript",
+    },
+    {
       title: "Tribute Page",
       description: "🗽 Steve Jobs tribute page.",
       stack: ["HTML", "SCSS"],
