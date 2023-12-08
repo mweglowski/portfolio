@@ -2,7 +2,7 @@ import MyPhoto from "../assets/images/me2.png"
 
 const About = () => {
   return (
-    <section className="my-[100px] flex flex-col items-center">
+    <section className="my-[100px] flex flex-col items-center" id="about">
       <header className="mb-[20px]">
         <h2 className="section-title">About</h2>
         <p className="text-slate-400">Know me better</p>

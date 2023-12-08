@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ExpandDownIcon from '../assets/images/expand-down.svg'
+import NavLinks from "./NavLinks";
 
 const Navbar = () => {
   const [areLinksDisplayed, setLinksDisplay] = useState<boolean>(false);
@@ -17,20 +18,15 @@ const Navbar = () => {
 
       {/* apply ternary operator inside classname on larger devices */}
       {(areLinksDisplayed) ? <ul className="flex flex-col text-center gap-3 mt-3 sm:hidden">
-        <li className="nav-link">Home</li>
-        <li className="nav-link">About</li>
-        <li className="nav-link">Projects</li>
-        <li className="nav-link">Contact</li>
-      </ul> : null}
+        <NavLinks />
+      </ul> : null
+      }
 
       {/* LARGER DEVICES */}
       <ul className="hidden sm:flex sm:justify-center">
-        <li className="nav-link">Home</li>
-        <li className="nav-link">About</li>
-        <li className="nav-link">Projects</li>
-        <li className="nav-link">Contact</li>
+        <NavLinks />
       </ul>
-    </nav>
+    </nav >
   );
 };
 

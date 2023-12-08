@@ -6,7 +6,7 @@ import CodewarsIcon from "../assets/images/codewars.svg"
 
 const Contact = () => {
   return (
-    <section className="mt-[100px]">
+    <section className="mt-[100px]" id="contact">
       <header>
         <h2 className="section-title">Contact</h2>
         <p className="text-slate-400 text-center">
@@ -25,7 +25,7 @@ const Contact = () => {
           <img src={LinkedinIcon} className="socials-icon" />
         </a>
         <a href="https://github.com/mweglowski" target="_blank">
-          <img src={GithubIcon}className="socials-icon" />
+          <img src={GithubIcon} className="socials-icon" />
         </a>
         <a href="https://www.datacamp.com/portfolio/s1lent" target="_blank">
           <img src={DatacampIcon} className="socials-icon" />

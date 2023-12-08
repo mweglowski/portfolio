@@ -11,7 +11,7 @@ const Home = ({ onGameDisplayChange }: HomeProps) => {
   }
 
   return (
-    <section className="h-[100vh] flex flex-col relative">
+    <section className="h-[100vh] flex flex-col relative" id="home">
       <header className="pt-[35vh]">
         <div className="text-4xl text-slate-300 text-center">
           <p>Hi!</p>
