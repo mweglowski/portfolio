@@ -16,7 +16,7 @@ const Home = ({ onGameDisplayChange }: HomeProps) => {
         <div className="text-4xl text-slate-300 text-center">
           <p>Hi!</p>
           <p>I'm Marcin</p>
-          <p className="text-xl pt-3 text-slate-400">Software Engineer</p>
+          <p className="text-xl pt-3 text-slate-400">Computer Science Student</p>
         </div>
       </header>
 
