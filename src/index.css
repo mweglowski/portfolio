@@ -41,6 +41,10 @@ body {
 .box-inset-shadow {
 	box-shadow: 0 0 0 1em rgb(15, 23, 42), inset 0 0 3em 4em rgb(15, 23, 42);
 }
+.emphasis {
+	text-shadow: 0 0 5px #FBBF24;
+	color: #FBBF24;
+}
 
 /* EDUCATION */
 .edu-time-container {
