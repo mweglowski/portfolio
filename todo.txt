@@ -1,10 +1,1 @@
 website preview in projects section
-
-about section
-
-scroll automatically to specific section after clicking navigation link
-
-reaction test game
-make Cell component
-
-?Section component
