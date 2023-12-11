@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useModalContext } from "../store/modal-context";
 
 type HomeProps = {
   onGameDisplayChange: () => void;

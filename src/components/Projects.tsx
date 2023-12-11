@@ -4,7 +4,7 @@ export type ProjectData = {
   title: string;
   description: string;
   stack: Array<string>;
-  imgSrc: string;
+  imgSrc?: string;
   githubLink: string;
 };
 
@@ -26,14 +26,14 @@ const Projects = () => {
         "HTML",
         "GCP",
       ],
-      imgSrc: "../assets/images/jobfinder.jpg",
+      imgSrc: "jobfinder.jpg",
       githubLink: "https://github.com/mweglowski/jobfinder",
     },
     {
       title: "Djangstaurant",
       description: "🍹 Restaurant/Pub app. Django CRUD educational project.",
       stack: ["Python", "Django", "CSS", "HTML", "SQLite3"],
-      imgSrc: "../assets/images/djangstaurant.jpg",
+      imgSrc: "djangstaurant.jpg",
       githubLink: "https://github.com/mweglowski/djangstaurant",
     },
     {
@@ -48,7 +48,6 @@ const Projects = () => {
         "Pandas",
         "Matplotlib",
       ],
-      imgSrc: "../assets/images/property_price_predictor.jpg",
       githubLink: "https://github.com/mweglowski/property_price_predictor",
     },
     {
@@ -61,7 +60,7 @@ const Projects = () => {
         "HTML",
         "CSS"
       ],
-      imgSrc: "../assets/images/departures.jpg",
+      imgSrc: "departures.jpg",
       githubLink: "https://github.com/mweglowski/departures",
     },
     {
@@ -74,14 +73,13 @@ const Projects = () => {
         "HTML",
         "CSS"
       ],
-      imgSrc: "../assets/images/portfolio.jpg",
       githubLink: "https://github.com/mweglowski/portfolio-typescript",
     },
     {
       title: "Tribute Page",
       description: "🗽 Steve Jobs tribute page.",
       stack: ["HTML", "SCSS"],
-      imgSrc: "../assets/images/tribute_page.jpg",
+      imgSrc: "tribute_page.jpg",
       githubLink: "https://github.com/mweglowski/tribute-page",
     },
   ];

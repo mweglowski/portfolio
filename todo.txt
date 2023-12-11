@@ -1,1 +1,1 @@
-website preview in projects section
+import images in Projects.tsx (every image) since they will be passed via context (not strings but elements)
