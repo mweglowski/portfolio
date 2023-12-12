@@ -35,7 +35,12 @@ const ProjectPreviewContextProvider = ({ children }: ProjectPreviewContextProvid
     isDisplayed,
     image,
     toggleDisplay() {
-      setDisplay((prevDisplay) => !prevDisplay)
+      setDisplay((prevDisplay) => {
+        if (prevDisplay == true) {
+          setImage("");
+        }
+        return !prevDisplay
+      })
     },
     setImageSource(newImage) {
       setImage(newImage)

@@ -6,10 +6,16 @@ type BackdropProps = {
 };
 
 const Backdrop = ({ children }: BackdropProps) => {
-  const { toggleDisplay } = useProjectPreviewContext();
+  const { toggleDisplay, image } = useProjectPreviewContext();
+
+  const toggleBackdropDisplayHandler = () => {
+    if (image != "") {
+      toggleDisplay();
+    }
+  }
 
   return (
-    <div className="z-50 p-5 backdrop-blur-[10px] h-full w-full flex flex-col fixed" onClick={toggleDisplay}>
+    <div className="z-50 p-5 backdrop-blur-[10px] h-full w-full flex flex-col fixed" onClick={toggleBackdropDisplayHandler}>
       {children}
     </div>
   );
