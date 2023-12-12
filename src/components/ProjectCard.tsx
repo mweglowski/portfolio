@@ -9,10 +9,10 @@ type ProjectCardProps = {
 const ProjectCard = ({ projectData }: ProjectCardProps) => {
   const { toggleDisplay, setImageSource } = useProjectPreviewContext();
 
-  const { title, description, stack, imgSrc, githubLink } = projectData;
+  const { title, description, stack, image, githubLink } = projectData;
 
   const previewDisplayHandler = () => {
-    setImageSource(imgSrc as string);
+    setImageSource(image as string);
     toggleDisplay();
   };
 
@@ -41,7 +41,7 @@ const ProjectCard = ({ projectData }: ProjectCardProps) => {
 
       {/* ACTIONS */}
       <div className="flex justify-between mt-3 items-end">
-        {imgSrc ? (
+        {image ? (
           <button
             className="text-slate-400 border-t-2 border-r-2 border-slate-800 p-2 rounded-tr-md button-hover"
             onClick={previewDisplayHandler}

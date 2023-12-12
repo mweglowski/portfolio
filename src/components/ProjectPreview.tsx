@@ -8,13 +8,10 @@ const ProjectPreview = () => {
   return isProjectPreviewDisplayed ? (
     <div>
       <Backdrop>
-        <div>siema</div>
-        <img
-          src={image}
-          alt="project-preview"
-          width={100}
-          height={100}
-        />
+        <div className="flex flex-col items-center">
+          <h2 className="text-2xl">Preview</h2>
+          <img src={image} alt="project-preview" className="h-full rounded-lg mt-[4em] max-h-[500px] animate-slide-down" />
+        </div>
       </Backdrop>
     </div>
   ) : null;

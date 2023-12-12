@@ -31,6 +31,19 @@ body {
 .socials-icon {
 	@apply w-[40px] h-[40px] rounded-md p-[6px] button-hover;
 }
+.animate-slide-down {
+	animation: slide-down 500ms ease-in-out;
+}
+@keyframes slide-down {
+	from {
+		opacity: 0;
+		transform: translateY(-10%);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
 
 /* NAVIGATION */
 .nav-link {

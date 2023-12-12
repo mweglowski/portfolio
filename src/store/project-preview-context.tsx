@@ -2,9 +2,9 @@ import { createContext, useContext, useState, type ReactNode } from "react";
 
 type ProjectPreviewContextValue = {
   isDisplayed: boolean;
-  image: HTMLImageElement;
+  image: string;
   toggleDisplay: () => void;
-  setImageSource: (image: HTMLImageElement) => void;
+  setImageSource: (image: string) => void;
 }
 
 // CONTEXT
@@ -29,7 +29,7 @@ type ProjectPreviewContextProviderProps = {
 // CONTEXT PROVIDER
 const ProjectPreviewContextProvider = ({ children }: ProjectPreviewContextProviderProps) => {
   const [isDisplayed, setDisplay] = useState<boolean>(false);
-  const [image, setImage] = useState<HTMLImageElement>();
+  const [image, setImage] = useState<string>("");
 
   const ctx: ProjectPreviewContextValue = {
     isDisplayed,

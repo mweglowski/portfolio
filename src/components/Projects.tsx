@@ -1,10 +1,14 @@
 import ProjectCardList from "./ProjectCardList";
+import JobfinderImage from "../assets/images/jobfinder.jpg"
+import DjangstaurantImage from "../assets/images/djangstaurant.jpg"
+import DeparturesImage from "../assets/images/departures.jpg"
+import TributePageImage from "../assets/images/tribute_page.jpg"
 
 export type ProjectData = {
   title: string;
   description: string;
   stack: Array<string>;
-  imgSrc?: string;
+  image?: string;
   githubLink: string;
 };
 
@@ -26,14 +30,14 @@ const Projects = () => {
         "HTML",
         "GCP",
       ],
-      imgSrc: "jobfinder.jpg",
+      image: JobfinderImage,
       githubLink: "https://github.com/mweglowski/jobfinder",
     },
     {
       title: "Djangstaurant",
       description: "🍹 Restaurant/Pub app. Django CRUD educational project.",
       stack: ["Python", "Django", "CSS", "HTML", "SQLite3"],
-      imgSrc: "djangstaurant.jpg",
+      image: DjangstaurantImage,
       githubLink: "https://github.com/mweglowski/djangstaurant",
     },
     {
@@ -60,7 +64,7 @@ const Projects = () => {
         "HTML",
         "CSS"
       ],
-      imgSrc: "departures.jpg",
+      image: DeparturesImage,
       githubLink: "https://github.com/mweglowski/departures",
     },
     {
@@ -79,7 +83,7 @@ const Projects = () => {
       title: "Tribute Page",
       description: "🗽 Steve Jobs tribute page.",
       stack: ["HTML", "SCSS"],
-      imgSrc: "tribute_page.jpg",
+      image: TributePageImage,
       githubLink: "https://github.com/mweglowski/tribute-page",
     },
   ];
