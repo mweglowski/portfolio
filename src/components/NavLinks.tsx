@@ -14,7 +14,7 @@ const NavLinks = () => {
         duration={500}
         key={section}
       >
-        <li className="nav-link">{section[0].toUpperCase() + section.slice(1, section.length)}</li>
+        <li className="nav-link animate-slide-down">{section[0].toUpperCase() + section.slice(1, section.length)}</li>
       </Link>)}
     </>
   )
