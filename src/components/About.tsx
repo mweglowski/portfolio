@@ -24,7 +24,7 @@ const About = () => {
               Welcome!
             </Emphasis>
           </h3> */}
-          <p className='text-slate-400 hyphens-auto text-justify'>As you already know my name is <Emphasis>Marcin</Emphasis> and as an <Emphasis>ambitious</Emphasis> student, I am deeply committed to overcoming challenges with a <Emphasis>determined mindset</Emphasis>. I have a passion for <Emphasis>continuous learning</Emphasis> which drives me to explore various technological areas. Currently, my focus is on gaining a profound understanding of <Emphasis>Artificial Intelligence</Emphasis>, particularly in the field of <Emphasis>Computer Vision</Emphasis>. </p>
+          <p className='text-slate-400 hyphens-auto text-justify'>As you already know my name is <Emphasis>Marcin</Emphasis> and as an <Emphasis>ambitious</Emphasis> student, I am deeply committed to overcoming challenges with a <Emphasis>determined mindset</Emphasis>. I have a passion for <Emphasis>continuous learning</Emphasis> which drives me to explore various technological areas. Currently, my focus is on gaining a profound understanding of <Emphasis>Artificial Intelligence</Emphasis>, particularly in the field of <Emphasis>Reinforcement Learning</Emphasis>. </p>
           {/* <p className='text-slate-400 hyphens-auto text-justify'>
             LOREM FSAkfdsjal fsad flskd jsdlkjf sdlk jfj ksdf lksdj flsk fldskj dslkj dsflkj sdlkf jsflksd flkds jflsdkf jsdlk jsdldskj flskf jsdlkfj sdlkf jsdlkfj sdflkdsj flkfjewiofj weoigh sdij
           </p> */}
