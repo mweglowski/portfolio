@@ -3,6 +3,7 @@ import JobfinderImage from "../assets/images/jobfinder.jpg"
 import DjangstaurantImage from "../assets/images/djangstaurant.jpg"
 import DeparturesImage from "../assets/images/departures.jpg"
 import TributePageImage from "../assets/images/tribute_page.jpg"
+import BanditSimulatorImage from "../assets/images/bandit_simulator.png"
 
 export type ProjectData = {
   title: string;
@@ -16,6 +17,13 @@ export type ProjectsData = Array<ProjectData>;
 
 const Projects = () => {
   const projectsData: ProjectsData = [
+    {
+      title: "K-Armed Bandit Problem Simulator",
+      description: "🦾🤖 Visual and interactive simulator of k-armed bandit problem",
+      stack: ["Reinforcement Learning", "JavaScript", "React.js", "Tailwind"],
+      image: BanditSimulatorImage,
+      githubLink: "https://github.com/mweglowski/bandit_problem_simulator",
+    },
     {
       title: "Jobfinder",
       description: "🔍 Application that searches among different artificially generated job offers and stores them in the cloud.",
@@ -78,13 +86,6 @@ const Projects = () => {
         "CSS"
       ],
       githubLink: "https://github.com/mweglowski/portfolio-typescript",
-    },
-    {
-      title: "Tribute Page",
-      description: "🗽 Steve Jobs tribute page.",
-      stack: ["HTML", "SCSS"],
-      image: TributePageImage,
-      githubLink: "https://github.com/mweglowski/tribute-page",
     },
   ];
 
