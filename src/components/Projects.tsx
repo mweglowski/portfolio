@@ -1,7 +1,7 @@
 import ProjectCardList from "./ProjectCardList";
 import JobfinderImage from "../assets/images/jobfinder.jpg"
 import DjangstaurantImage from "../assets/images/djangstaurant.jpg"
-import DeparturesImage from "../assets/images/departures.jpg"
+import DeparturesImage from "../assets/images/departures.png"
 import TributePageImage from "../assets/images/tribute_page.jpg"
 
 export type ProjectData = {
