@@ -23,7 +23,7 @@ const Projects = () => {
         "Reinforcement Learning", "JavaScript", "React.js", "Tailwind"
       ],
       image: PathfindingSimulatorImage,
-      githubLink: "https://github.com/mweglowski/pathfinding-simulator",
+      githubLink: "https://github.com/mweglowski/pathfinding_simulator",
     },
     {
       title: "Property Price Predictor",
