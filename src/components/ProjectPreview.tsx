@@ -10,7 +10,7 @@ const ProjectPreview = () => {
       <Backdrop>
         <div className="flex flex-col items-center">
           <h2 className="text-2xl">Preview</h2>
-          <img src={image} alt="project-preview" className="h-full rounded-lg mt-[4em] max-h-[500px] animate-slide-down" />
+          <img src={image} alt="project-preview" className="rounded-lg mt-[4em] max-h-[500px] animate-slide-down w-full" />
         </div>
       </Backdrop>
     </div>
