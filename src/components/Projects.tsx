@@ -1,9 +1,8 @@
 import ProjectCardList from "./ProjectCardList";
-import JobfinderImage from "../assets/images/jobfinder.jpg"
 import DjangstaurantImage from "../assets/images/djangstaurant.jpg"
-import DeparturesImage from "../assets/images/departures.jpg"
-import TributePageImage from "../assets/images/tribute_page.jpg"
+import DeparturesImage from "../assets/images/departures.png"
 import BanditSimulatorImage from "../assets/images/bandit_simulator.png"
+import PathfindingSimulatorImage from "../assets/images/pathfinding_simulator.png"
 
 export type ProjectData = {
   title: string;
@@ -18,35 +17,13 @@ export type ProjectsData = Array<ProjectData>;
 const Projects = () => {
   const projectsData: ProjectsData = [
     {
-      title: "K-Armed Bandit Problem Simulator",
-      description: "🦾🤖 Visual and interactive simulator of k-armed bandit problem",
-      stack: ["Reinforcement Learning", "JavaScript", "React.js", "Tailwind"],
-      image: BanditSimulatorImage,
-      githubLink: "https://github.com/mweglowski/bandit_problem_simulator",
-    },
-    {
-      title: "Jobfinder",
-      description: "🔍 Application that searches among different artificially generated job offers and stores them in the cloud.",
+      title: "Pathfinding Simulator",
+      description: "🧨 Interactive temporal difference algorithm simulator in which agent has to find the optimal path to reach certain destination.",
       stack: [
-        "Next.js",
-        "React.js",
-        "JavaScript",
-        "OAuth",
-        "MongoDb",
-        "CSS",
-        "Tailwind",
-        "HTML",
-        "GCP",
+        "Reinforcement Learning", "JavaScript", "React.js", "Tailwind"
       ],
-      image: JobfinderImage,
-      githubLink: "https://github.com/mweglowski/jobfinder",
-    },
-    {
-      title: "Djangstaurant",
-      description: "🍹 Restaurant/Pub app. Django CRUD educational project.",
-      stack: ["Python", "Django", "CSS", "HTML", "SQLite3"],
-      image: DjangstaurantImage,
-      githubLink: "https://github.com/mweglowski/djangstaurant",
+      image: PathfindingSimulatorImage,
+      githubLink: "https://github.com/mweglowski/pathfinding_simulator",
     },
     {
       title: "Property Price Predictor",
@@ -61,6 +38,20 @@ const Projects = () => {
         "Matplotlib",
       ],
       githubLink: "https://github.com/mweglowski/property_price_predictor",
+    },
+    {
+      title: "K-Armed Bandit Problem Simulator",
+      description: "🦾🤖 Visual and interactive simulator of k-armed bandit problem",
+      stack: ["Reinforcement Learning", "JavaScript", "React.js", "Tailwind"],
+      image: BanditSimulatorImage,
+      githubLink: "https://github.com/mweglowski/bandit_problem_simulator",
+    },
+    {
+      title: "Djangstaurant",
+      description: "🍹 Restaurant/Pub app. Django CRUD educational project.",
+      stack: ["Python", "Django", "CSS", "HTML", "SQLite3"],
+      image: DjangstaurantImage,
+      githubLink: "https://github.com/mweglowski/djangstaurant",
     },
     {
       title: "Departures",
