@@ -7,10 +7,10 @@ const ContactForm = () => {
   const sendEmail = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    const service_id = process.env.EMAILJS_SERVICE_ID!;
+    const service_id = process.env.REACT_APP_EMAILJS_SERVICE_ID!;
     const template_id = "template_sb4p7te";
     const formElement = event.currentTarget;
-    const public_api_key = process.env.EMAILJS_PUBLIC_API_KEY;
+    const public_api_key = process.env.REACT_APP_EMAILJS_PUBLIC_API_KEY;
 
     emailjs
       .sendForm(service_id, template_id, formElement, public_api_key)
