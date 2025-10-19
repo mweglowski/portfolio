@@ -9,7 +9,7 @@ type ProjectCardProps = {
 const ProjectCard = ({ projectData }: ProjectCardProps) => {
   const { toggleDisplay, setImageSource } = useProjectPreviewContext();
 
-  const { title, description, stack, image, githubLink } = projectData;
+  const { title, description, stack, image, video, githubLink } = projectData;
 
   const previewDisplayHandler = () => {
     setImageSource(image as string);
@@ -48,6 +48,15 @@ const ProjectCard = ({ projectData }: ProjectCardProps) => {
           >
             Preview
           </button>
+        ) : null}
+        {video ? (
+          <a
+            className="text-slate-400 border-t-2 border-r-2 border-slate-800 p-2 rounded-tr-md button-hover"
+            href={video}
+            target="_blank"
+          >
+            Preview
+          </a>
         ) : null}
         <a
           className="text-amber-400 hover:underline cursor-pointer p-1 pr-2 hover:text-amber-500 duration-300 ml-auto"

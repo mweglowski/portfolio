@@ -1,8 +1,7 @@
-import React from 'react'
 import { Link } from "react-scroll";
 
 const NavLinks = () => {
-  const sections = ["home", "about", "education", "projects", "contact"];
+  const sections = ["home", "about", "experience", "education", "projects", "contact"];
 
   return (
     <>

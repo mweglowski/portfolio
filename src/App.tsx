@@ -9,6 +9,7 @@ import Game from "./components/Game";
 import ProjectPreviewContextProvider from "./store/project-preview-context";
 import TimerContextProvider from "./store/timer-context";
 import ProjectPreview from "./components/ProjectPreview";
+import Experience from "./components/Experience";
 
 function App() {
   const [isGameDisplayed, setGameDisplay] = useState<boolean>(false);
@@ -29,6 +30,7 @@ function App() {
         <Navbar />
         <Home onGameDisplayChange={gameDisplayHandler} />
         <About />
+        <Experience />
         <Education />
         <Projects />
         <Contact />

@@ -1,6 +1,4 @@
 import ProjectCardList from "./ProjectCardList";
-import DjangstaurantImage from "../assets/images/djangstaurant.jpg"
-import DeparturesImage from "../assets/images/departures.png"
 import BanditSimulatorImage from "../assets/images/bandit_simulator.png"
 import PathfindingSimulatorImage from "../assets/images/pathfinding_simulator.png"
 
@@ -9,6 +7,7 @@ export type ProjectData = {
   description: string;
   stack: Array<string>;
   image?: string;
+  video?: string;
   githubLink: string;
 };
 
@@ -17,27 +16,26 @@ export type ProjectsData = Array<ProjectData>;
 const Projects = () => {
   const projectsData: ProjectsData = [
     {
-      title: "Pathfinding Simulator",
-      description: "🧨 Interactive temporal difference algorithm simulator in which agent has to find the optimal path to reach certain destination.",
+      title: "Concert RAG System",
+      description: "🎤 AI-powered system that answers concert-related questions. It processes documents, summarizes, stores relevant data, and answers prompts with the help of advanced NLP techniques, vector databases and web search.",
+      stack: ["Python", "LangChain", "Huggingface", "FastAPI", "SerpAPI", "OpenRouter", "Chroma", "TypeScript", "React.js"],
+      video: 'https://www.youtube.com/watch?v=HANnxs0kN7Q&feature=youtu.be',
+      githubLink: "https://github.com/mweglowski/concert_rag",
+    },
+    {
+      title: "Frozen Lake Case Study",
+      description: "🧊 A reinforcement learning project using Q-learning on Gym's Frozen Lake environment. Built in Python with Pygame visualizations and Q-value snapshots. It was presented using Google Slides live at university class explaining core concepts.",
+      stack: ['Reinforcement Learning', 'Python', 'Gym', 'Matplotlib', 'PyGame', 'Numpy'],
+      githubLink: "https://github.com/mweglowski/frozen_lake",
+    },
+    {
+      title: "Dynamite Avoider",
+      description: "🧨 Interactive temporal difference algorithm simulator in which agent has to find the optimal path while avoiding manually placed dynamites to reach certain destination.",
       stack: [
         "Reinforcement Learning", "JavaScript", "React.js", "Tailwind"
       ],
       image: PathfindingSimulatorImage,
       githubLink: "https://github.com/mweglowski/pathfinding_simulator",
-    },
-    {
-      title: "Property Price Predictor",
-      description: "🏠 Predict property price by square footage using linear regression, based on data scraped from the web.",
-      stack: [
-        "Python",
-        "Machine Learning",
-        "Numpy",
-        "Seaborn",
-        "BeautifulSoup",
-        "Pandas",
-        "Matplotlib",
-      ],
-      githubLink: "https://github.com/mweglowski/property_price_predictor",
     },
     {
       title: "K-Armed Bandit Problem Simulator",
@@ -46,44 +44,12 @@ const Projects = () => {
       image: BanditSimulatorImage,
       githubLink: "https://github.com/mweglowski/bandit_problem_simulator",
     },
-    {
-      title: "Djangstaurant",
-      description: "🍹 Restaurant/Pub app. Django CRUD educational project.",
-      stack: ["Python", "Django", "CSS", "HTML", "SQLite3"],
-      image: DjangstaurantImage,
-      githubLink: "https://github.com/mweglowski/djangstaurant",
-    },
-    {
-      title: "Departures",
-      description: "🚌 Application that shows the nearest arrival times of buses and trams from nearby stops.",
-      stack: [
-        "JavaScript",
-        "React.js",
-        "Tailwind",
-        "HTML",
-        "CSS"
-      ],
-      image: DeparturesImage,
-      githubLink: "https://github.com/mweglowski/departures",
-    },
-    {
-      title: "This Portfolio",
-      description: "🗃️ My Personal Portfolio",
-      stack: [
-        "TypeScript",
-        "React.js",
-        "Tailwind",
-        "HTML",
-        "CSS"
-      ],
-      githubLink: "https://github.com/mweglowski/portfolio-typescript",
-    },
   ];
 
   return (
     <section id="projects">
       <header>
-        <h2 className="section-title mt-[100px]">Projects</h2>
+        <h2 className="section-title mt-[150px]">Projects</h2>
         <p className="text-slate-400 text-center">
           Each project you can find on my github
         </p>

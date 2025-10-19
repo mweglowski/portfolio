@@ -13,21 +13,13 @@ const About = () => {
 
         {/* Photo */}
         <div className="overflow-hidden w-[75%] mx-auto relative rounded-[44%] max-w-[430px] sm:mx-2">
-          <div className="absolute z-20 w-[105%] h-[105%] rounded-full box-inset-shadow border-none border-amber-400 -left-[10px] -top-[10px]" />
+          <div className="absolute w-[105%] h-[105%] rounded-full box-inset-shadow border-none border-amber-400 -left-[10px] -top-[10px]" />
 
           <img src={MyPhoto} className="rounded-full" />
         </div>
 
-        <div className="card w-[80%] p-4 -mt-4 md:relative md:-left-4 md:m-0 -z-10">
-          {/* <h3 className="text-lg">
-            <Emphasis>
-              Welcome!
-            </Emphasis>
-          </h3> */}
-          <p className='text-slate-400 hyphens-auto text-justify'>As you already know my name is <Emphasis>Marcin</Emphasis> and as an <Emphasis>ambitious</Emphasis> student, I am deeply committed to overcoming challenges with a <Emphasis>determined mindset</Emphasis>. I have a passion for <Emphasis>continuous learning</Emphasis> which drives me to explore various technological areas. Currently, my focus is on gaining a profound understanding of <Emphasis>Artificial Intelligence</Emphasis>, particularly in the field of <Emphasis>Reinforcement Learning</Emphasis>. </p>
-          {/* <p className='text-slate-400 hyphens-auto text-justify'>
-            LOREM FSAkfdsjal fsad flskd jsdlkjf sdlk jfj ksdf lksdj flsk fldskj dslkj dsflkj sdlkf jsflksd flkds jflsdkf jsdlk jsdldskj flskf jsdlkfj sdlkf jsdlkfj sdflkdsj flkfjewiofj weoigh sdij
-          </p> */}
+        <div className="card w-[80%] p-4 -mt-4 md:relative md:-left-4 md:m-0 z-10">
+          <p className='text-slate-400 hyphens-auto text-justify'>My name is <Emphasis>Marcin</Emphasis>, and as a <Emphasis>Computer Science</Emphasis> student, I'm driven by <Emphasis>curiosity</Emphasis> that leads me to explore diverse technological domains. My current focus is on gaining an <Emphasis>in-depth understanding</Emphasis> of <Emphasis>Artificial Intelligence</Emphasis>, with a special interest in <Emphasis>Deep Learning</Emphasis>. Beyond that, I enjoy running, going to the gym, and spending time with others.</p>
         </div>
       </div>
 

@@ -12,7 +12,7 @@ body {
 /* GENERAL */
 .card {
 	@apply border-2
-	bg-slate-900 border-slate-800 rounded-md;
+	bg-slate-900 border-[#3d4c644a] rounded-md;
 }
 .section-title {
 	@apply text-2xl text-center uppercase;
@@ -23,7 +23,7 @@ body {
 	read-only:bg-blue-500;
 }
 .button-hover {
-	@apply hover:bg-slate-800 hover:text-slate-500 duration-300 cursor-pointer;
+	@apply hover:bg-slate-800 duration-300 cursor-pointer;
 }
 .button {
 	@apply w-fit text-slate-400 button-hover;
